@@ -9,7 +9,9 @@
     <h1 id="title">Survey Form</h1>
     <p id="description">Thank you for participating in our short survey.</p>
     <form id="survey-form">
-        <label name="name">Name: <input id="name" type="text"/></label>
+        <label for="name">Name: <input id="name" type="text" placeholder="Enter your name"/></label>
+        <label for="email">Email: <input id="email" type="email" placeholder="Enter your email address"/></label>
+        <input id="number" pattern="[0-9]" min="13" max="100"/>
     </form>
 </body>
 </html>
