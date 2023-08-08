@@ -1,29 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Form</title>
-    <link rel="stylesheet" href="styles.css"
-</head>
+    <link rel="stylesheet" href="styles.css" </head>
+
 <body>
     <h1 id="title">Pet Finder Survey Form</h1>
     <p id="description">Please complete a short survey of the app.</p>
     <form id="survey-form">
-        <label for="name" id="name-label">Name: <input id="name" type="text" placeholder="Enter your name" required/></label>
-        <label for="email" id="email-label">Email: <input id="email" type="email" placeholder="Enter your email address" required/></label>
-        <label for="number" id="number-label">Age: <input id="number" type="number" pattern="[0-9]{13,}" min="13" max="100" placeholder="Enter a number"/></label>
-        <select id="dropdown">
-            <option></option>
-            <option></option>
-        </select>
-        <input type="radio" value="" name=""/>
-        <input type="radio" value="" name=""/>
-        <input type="checkbox" value=""/>
-        <input type="checkbox" value=""/>
-        <input type="checkbox" value=""/>
-        <a>Tell us a little more <input type="textarea" /></a>
+        <fieldset>
+            <label for="name" id="name-label">Name: 
+                <input id="name" type="text" placeholder="Enter your name" name="name" required />
+                </label>
+            <label for="email" id="email-label">Email: 
+                <input id="email" type="email" placeholder="Enter your email address" name="email" required />
+            </label>
+            <label for="number" id="number-label">Age: 
+                <input id="number" type="number" pattern="[0-9]{13,}" min="13" max="100" placeholder="Enter a number" name="number" />
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="dropdown">How did you hear about the app?
+                <select name="dropdown" id="dropdown">
+                    <option>select option below</option>
+                    <option>Internet</option>
+                    <option>Ad</option>
+                    <option>Word of Mouth</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <span>Would you recommend this app to a friend?</span>
+            <label for="yes">
+                <input id="yes" type="radio" value="yes" name="recommendation" class="inline" /> Yes
+            </label>
+            <label for="maybe">
+                <input id="maybe" type="radio" value="maybe" name="recommendation" class="inline"/> Maybe
+            </label>
+            <label for="no">
+                <input id="no" type="radio" value="no" name="recommendation" class="inline"/> No
+            </label>
+            <label for="unsure">
+                <input id="unsure" type="radio" value="unsure" name="recommendation" class="inline"/> Unsure
+            </label>
+        </fieldset>
+        <fieldset>
+            <input type="checkbox" value="" class="inline"/>
+            <input type="checkbox" value="" class="inline"/>
+            <input type="checkbox" value="" class="inline"/>
+        </fieldset>
+        <label for="textarea"> Have a few ideas how we could improve our app? Let us know!<input type="textarea" name="textarea" /></label>
         <input type="submit" />
     </form>
 </body>
+
 </html>
