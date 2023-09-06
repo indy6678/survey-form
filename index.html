@@ -45,12 +45,15 @@
             </label>
         </fieldset>
         <fieldset>
-            <input type="checkbox" value="" class="inline"/>
-            <input type="checkbox" value="" class="inline"/>
-            <input type="checkbox" value="" class="inline"/>
+            <div>
+            <input type="checkbox" value="background" class="inline" name="background"/> <label for="Background">Background</label>
+            </div>
+            <input type="checkbox" value="layout" class="inline"/> Layout
+            <input type="checkbox" value="colors" class="inline"/> Colors
         </fieldset>
-        <label for="textarea"> Any other ideas on how we could improve our app? <input type="textarea" name="textarea" /></label>
-        <input type="submit" />
+        <label for="ideas"> Any other ideas on how we could improve our app? </label>
+        <textarea name="ideas" placeholder="Let us know here" ></textarea>
+        <input type="submit" id="submit"/>
     </form>
 </body>
 
