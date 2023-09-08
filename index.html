@@ -46,17 +46,15 @@
             </label>
         </fieldset>
         <fieldset>
-            <div class="check">
-                <input type="checkbox" value="background" class="inline" name="background" id="background" /> <label
-                    for="background"> Background </label>
-            </div>
             <div>
-                <input type="checkbox" value="layout" class="inline" name="layout" id="layout" /> <label for="layout">
-                    Layout </label>
+                <!-- place input inside label and unset checkbox width to keep inline -->
+                <label for="background"><input type="checkbox" value="background"  class="inline" name="background" id="background" /> Background </label>
             </div>
-            <div>
-                <input type="checkbox" value="colors" class="inline" name="colors" id="colors" /> <label for="colors">
-                    Colors </label>
+            <div>                
+                <label for="layout"> <input type="checkbox" value="layout" class="inline" name="layout" id="layout" /> Layout </label>
+            </div>
+            <div>                
+                <label for="colors"> <input type="checkbox" value="colors" class="inline" name="colors" id="colors" /> Colors </label>
             </div>
         </fieldset>
         <fieldset>
